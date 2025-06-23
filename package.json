@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "next build --no-lint",
+    "build": "SKIP_BUILD_STATIC_GENERATION=true next build --no-lint",
     "start": "next start",
     "lint": "next lint"
   },

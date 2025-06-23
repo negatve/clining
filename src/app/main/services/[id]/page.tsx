@@ -1,8 +1,13 @@
 import React from 'react';
 import ServiceDetailPage from '@/components/ServiceDetailPage';
-import { PageProps } from 'next';
 
-const Page = ({ params }: PageProps<{ id: string }>) => {
+type PageProps = {
+  params: {
+    id: string;
+  };
+};
+
+const Page = ({ params }: PageProps) => {
   if (!params?.id) {
     return <p>Error: ID is missing</p>;
   }

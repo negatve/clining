@@ -1,13 +1,12 @@
-import React from 'react';
+import { Metadata } from 'next';
+import { FC } from 'react';
 import ServiceDetailPage from '@/components/ServiceDetailPage';
 
-type PageProps = {
-  params: {
-    id: string;
-  };
-};
+interface PageProps {
+  params: { id: string };
+}
 
-const Page = ({ params }: PageProps) => {
+const Page: FC<PageProps> = ({ params }) => {
   if (!params?.id) {
     return <p>Error: ID is missing</p>;
   }
@@ -16,4 +15,5 @@ const Page = ({ params }: PageProps) => {
 };
 
 export default Page;
+
 

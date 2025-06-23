@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f9fafb; /* Основний фон */
+    color: #1f2937; /* Темний текст */
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .textSection {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .highlight {
+    color: #2563eb; /* Основний акцентний колір */
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    color: #4b5563; /* Текст вторинного кольору */
+  }
+  
+  .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+  
+  .price span {
+    color: #2563eb; /* Акцентний колір */
+  }
+  
+  .button {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .imageSection {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+/* Заголовок */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Блок зірок */
+.rating {
+  display: flex;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+/* Зірка */
+.star {
+  font-size: 2rem;
+  color: #d1d5db; /* Сірий колір для порожніх зірок */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Заповнена зірка */
+.star.filled {
+  color: #fbbf24; /* Жовтий колір для заповнених зірок */
+}
+
+.star:hover {
+  color: #f59e0b; /* Темно-жовтий колір при наведенні */
+}
+
+/* Середня оцінка */
+.averageRating {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #4b5563; /* Текст вторинного кольору */
+}

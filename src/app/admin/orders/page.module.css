@@ -1,0 +1,103 @@
+/* Загальний контейнер сторінки */
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+  }
+  
+  /* Заголовок сторінки */
+  .pageTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1f2937;
+  }
+  
+  /* Таблиця */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Заголовки таблиці */
+  .table th {
+    background-color: #7a9eed;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #6074b6;
+  }
+  
+  /* Рядки таблиці */
+  .table td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.9rem;
+    color: #4b5563;
+    text-align: left;
+    vertical-align: middle;
+    word-wrap: break-word;
+  }
+  
+  /* Чередування кольорів рядків */
+  .table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table tr:hover {
+    background-color: #f1f5f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Стиль для помилок */
+  .text-red-500 {
+    color: #ef4444;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Завантаження */
+  .loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #6b7280;
+    margin-top: 20px;
+  }
+  
+  /* Адаптивність таблиці */
+  @media (max-width: 768px) {
+    .table {
+      font-size: 0.8rem;
+    }
+  
+    .table th,
+    .table td {
+      padding: 8px;
+    }
+  }
+
+/* Кнопка видалення */
+.deleteButton {
+    background-color: #ef4444;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .deleteButton:hover {
+    background-color: #dc2626;
+  }

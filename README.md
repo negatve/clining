@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cleaning Website App
 
-## Getting Started
+## Опис проекту
 
-First, run the development server:
+Цей проект є веб-додатком для клінінгової компанії. Він дозволяє користувачам переглядати послуги, замовляти прибирання, а також отримувати інформацію про компанію. Додаток побудований з використанням сучасних веб-технологій.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Структура проекту
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1. **Коренева директорія**
+- **README.md**: Документація проекту.
+- **package.json**: Інформація про залежності та скрипти для запуску проекту.
+- **.gitignore**: Файли та папки, які ігноруються Git.
+- **node_modules/**: Залежності проекту (генерується автоматично після `npm install`).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. **Frontend**
+- **/src/**: Вихідний код фронтенду.
+    - **index.html**: Головний HTML-файл.
+    - **/css/**: Стилі додатку.
+        - **styles.css**: Основні стилі.
+    - **/js/**: Логіка додатку.
+        - **app.js**: Основний JavaScript-файл.
+    - **/images/**: Зображення, що використовуються на сайті.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. **Backend**
+- **/server/**: Серверна частина додатку.
+    - **server.js**: Основний файл сервера.
+    - **/routes/**: Маршрути для API.
+        - **services.js**: Обробка запитів, пов'язаних із послугами.
+    - **/models/**: Моделі даних.
+        - **service.js**: Модель для опису послуг.
+    - **/controllers/**: Логіка обробки запитів.
+        - **serviceController.js**: Контролер для роботи з послугами.
 
-## Learn More
+### 4. **Database**
+- **/db/**: Файли, пов'язані з базою даних.
+    - **dbConfig.js**: Конфігурація підключення до бази даних.
+    - **schema.sql**: SQL-скрипт для створення таблиць.
 
-To learn more about Next.js, take a look at the following resources:
+### 5. **Тести**
+- **/tests/**: Тестові файли.
+    - **frontend.test.js**: Тести для фронтенду.
+    - **backend.test.js**: Тести для бекенду.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Як запустити проект
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Встановіть залежності:
+     ```bash
+     npm install
+     ```
+2. Запустіть сервер:
+     ```bash
+     npm start
+     ```
+3. Відкрийте браузер і перейдіть за адресою:
+     ```
+     http://localhost:3000
+     ```
 
-## Deploy on Vercel
+## Функціонал
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Перегляд послуг клінінгової компанії.
+- Замовлення послуг через форму.
+- Інформація про компанію.
+- Адаптивний дизайн для мобільних пристроїв.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Технології
+
+- **Frontend**: HTML, CSS, JavaScript.
+- **Backend**: Node.js, Express.js.
+- **Database**: SQLlite.
+
+## Автори
+
+Проект створено для дипломної роботи. Усі права захищено.

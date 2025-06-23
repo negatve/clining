@@ -1,0 +1,170 @@
+/* Загальний контейнер сторінки */
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* Панель фільтрів */
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.sortSelect {
+  padding: 8px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+
+/* Контейнер для контенту */
+.content {
+  display: flex;
+  gap: 16px;
+}
+
+/* Контейнер для карток послуг */
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 послуги в рядку */
+  gap: 16px;
+  flex: 1;
+}
+
+/* Картка послуги */
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.card p {
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.card .price {
+  color: #2563eb;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.card .button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 8px;
+}
+
+.card .button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Фіксований калькулятор */
+.fixedCalculator {
+  position: sticky;
+  top: 16px;
+  align-self: flex-start;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: fit-content;
+}
+
+.fixedCalculator h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.fixedCalculator label {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.fixedCalculator input {
+  width: 90%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+
+.rating {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.star {
+  font-size: 1.5rem;
+  color: #d1d5db; /* Сірий колір для незаповнених зірок */
+  margin: 0 2px;
+  background: none;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: currentColor;
+}
+
+.star.filled {
+  background: linear-gradient(45deg, #FFD700, #FFC700, #FFB700); /* Градієнт для золотих зірок */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

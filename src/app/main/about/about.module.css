@@ -1,0 +1,168 @@
+.container {
+    padding: 32px;
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    color: #4b5563;
+    margin-bottom: 16px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 32px;
+  }
+  
+  .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .image {
+    width: 50%;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  .philosophy {
+    text-align: left;
+    max-width: 400px;
+  }
+  
+  .philosophy h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .philosophy p {
+    font-size: 1rem;
+    color: #6b7280;
+  }
+  
+  /* Секція послуг */
+  .services {
+    margin-top: 48px;
+  }
+  
+  .servicesTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  .servicesDescription {
+    font-size: 1rem;
+    color: #6b7280;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .servicesList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  
+  .serviceItem {
+    background-color: #f9fafb;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .serviceItem h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .serviceItem p {
+    font-size: 1rem;
+    color: #6b7280;
+  }
+
+/* Загальний контейнер */
+.container {
+    padding: 32px;
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+  }
+  
+  /* Секція послуг */
+  .services {
+    margin-top: 48px;
+  }
+  
+  .servicesHeader {
+    text-align: left;
+    margin-bottom: 32px;
+  }
+  
+  .servicesTitle {
+    font-size: 2rem; /* Зменшено розмір заголовка */
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .servicesDescription {
+    font-size: 0.9rem; /* Зменшено розмір тексту */
+    color: #6b7280;
+    line-height: 1.5;
+  }
+  
+  .servicesContent {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px; /* Зменшено відступ між елементами */
+  }
+  
+  .servicesImage {
+    flex: 1;
+    max-width: 100%; /* Зменшено ширину зображення */
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  .servicesList {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Зменшено відступ між елементами списку */
+  }
+  
+  .serviceItem {
+    background-color: #f9fafb;
+    padding: 12px; /* Зменшено внутрішні відступи */
+    border-radius: 8px; /* Зменшено радіус закруглення */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Зменшено тінь */
+  }
+  
+  .serviceItem h3 {
+    font-size: 1.1rem; /* Зменшено розмір заголовка */
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .serviceItem p {
+    font-size: 0.9rem; /* Зменшено розмір тексту */
+    color: #6b7280;
+    line-height: 1.4; /* Зменшено міжрядковий інтервал */
+  }

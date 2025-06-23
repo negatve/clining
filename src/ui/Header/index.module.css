@@ -1,0 +1,55 @@
+.header {
+    background-color: #f8f9fa; /* Світло-сірий фон */
+    color: #212529; /* Темний текст */
+    padding: 20px 0; /* Відступи зверху і знизу */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легка тінь */
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent; /* Прозорий фон */
+}
+
+.logo {
+    width: 40px; /* Ширина логотипа */
+    height: 40px; /* Висота логотипа */
+    object-fit: contain; /* Зберігає пропорції логотипа */
+    background-color: transparent; /* Прозорий фон */
+    border: none; /* Видаляє можливі рамки */
+}
+
+.header-title {
+    font-family: var(--font-regular); /* Використовуємо шрифт Amatic SC */
+    font-size: 2rem; /* Розмір шрифту для заголовка */
+    font-weight: bold;
+    color: #1f5e9e; /* Темний текст */
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    color: #6f7070; /* Синій текст */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-family: var(--font-bold); /* Використовуємо шрифт Amatic SC */
+    font-size: 1.5rem; /* Розмір шрифту для навігаційних посилань */
+}
+
+.nav-link:hover {
+    color: #000000; /* Темніший синій при наведенні */
+}

@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Amatic SC';
+  src: url('/fonts/AmaticSC-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Amatic SC Bold';
+  src: url('/fonts/AmaticSC-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --background: #ffffff; /* Білий фон */
+  --foreground: #212529; /* Темний текст */
+  --font-primary: 'Roboto', Arial, sans-serif;
+  --font-regular: 'Amatic SC', sans-serif;
+  --font-bold: 'Amatic SC Bold', sans-serif;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100%;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-regular);
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #007bff; /* Синій текст */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3; /* Темніший синій при наведенні */
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}

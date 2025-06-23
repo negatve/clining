@@ -1,0 +1,99 @@
+.container {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+gap: 16px;
+}
+
+.card {
+border: 1px solid #e5e7eb;
+border-radius: 12px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+padding: 16px;
+background-color: #ffffff;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.card:hover {
+transform: translateY(-8px);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+width: 100%;
+height: 180px;
+object-fit: cover;
+border-radius: 12px;
+margin-bottom: 16px;
+}
+
+#h3 {
+font-size: 1.5rem;
+font-weight: bold;
+color: #1f2937;
+margin-bottom: 12px;
+text-align: center;
+}
+
+#p {
+color: #4b5563;
+font-size: 1rem;
+line-height: 1.5;
+margin-bottom: 12px;
+text-align: center;
+}
+
+.price {
+color: #2563eb;
+font-weight: bold;
+font-size: 1.25rem;
+text-align: center;
+margin-top: 8px;
+}
+
+.button {
+display: block;
+width: 60%;
+text-align: center;
+background-color: #2563eb;
+color: #ffffff;
+font-weight: bold;
+padding: 10px 16px;
+border-radius: 8px;
+text-decoration: none;
+transition: background-color 0.5s ease;
+transition: color 0.5s ease;
+margin-top: 8px;
+}
+
+.button:hover {
+background-color: #1d4ed8;
+color: #d7e6ff;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  
+.star {
+font-size: 1.5rem;
+color: #d1d5db; /* Сірий колір для незаповнених зірок */
+margin: 0 2px;
+background: none;
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: currentColor;
+}
+
+.star.filled {
+background: linear-gradient(45deg, #FFD700, #FFC700, #FFB700);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}

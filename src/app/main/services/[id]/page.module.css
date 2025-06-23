@@ -1,0 +1,51 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #1f2937;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 16px;
+  }
+  
+  .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 16px;
+  }
+  
+  .orderButton {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .orderButton:hover {
+    background-color: #1d4ed8;
+  }

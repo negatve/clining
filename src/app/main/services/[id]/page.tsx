@@ -1,6 +1,7 @@
+import React from 'react';
 import ServiceDetailPage from '@/components/ServiceDetailPage';
 
-const Page = ({ params }: { params: { id: string } }) => {
+const Page = async ({ params }: { params: { id: string } }) => {
   if (!params?.id) {
     return <p>Error: ID is missing</p>;
   }
